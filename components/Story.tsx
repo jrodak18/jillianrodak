@@ -12,8 +12,9 @@ const Story: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
           <div className="relative">
              <div className="absolute -top-4 -left-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
+             {/* UPDATED PATH BELOW */}
              <img 
-               src="/jillianrodak/jillian-about.jpg" 
+               src="/jillian-about.jpg" 
                alt="Jillian Graduation" 
                className="w-full rounded-lg shadow-xl object-cover"
              />

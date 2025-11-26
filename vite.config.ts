@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/jillianrodak/', // <--- This is the key change for GitHub Pages
+      base: '/jillianrodak/', // <--- THIS LINE IS CRITICAL
       server: {
         port: 3000,
         host: '0.0.0.0',

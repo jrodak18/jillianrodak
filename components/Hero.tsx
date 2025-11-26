@@ -21,8 +21,9 @@ const Hero: React.FC = () => {
         {/* Image */}
         <div className="order-1 md:order-2 relative max-w-md mx-auto md:max-w-full">
           <div className="absolute -top-4 -right-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
+          {/* UPDATED PATH BELOW */}
           <img 
-            src="/jillianrodak/jillian-hero.jpg" 
+            src="/jillian-hero.jpg" 
             alt="Jillian Rodak" 
             className="w-full h-auto rounded-lg shadow-2xl object-cover aspect-[5/6]"
           />

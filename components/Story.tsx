@@ -13,7 +13,7 @@ const Story: React.FC = () => {
           <div className="relative">
              <div className="absolute -top-4 -left-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
              <img 
-               src="https://picsum.photos/450/550?grayscale" 
+               src="/jillianrodak/jillian-about.jpg" 
                alt="Jillian Graduation" 
                className="w-full rounded-lg shadow-xl object-cover"
              />

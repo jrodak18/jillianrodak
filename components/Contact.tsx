@@ -51,10 +51,10 @@ const Contact: React.FC = () => {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h3 className="text-lg text-gray-800 font-medium mb-4">Connect With Me</h3>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/jillianrodak/" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
                   <Linkedin size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
+                <a href="https://www.instagram.com/jillrodak" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
                   <Instagram size={18} />
                 </a>
                 <a href="#" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">

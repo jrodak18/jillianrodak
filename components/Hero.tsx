@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         <div className="order-1 md:order-2 relative max-w-md mx-auto md:max-w-full">
           <div className="absolute -top-4 -right-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
           <img 
-            src="https://picsum.photos/500/600?grayscale" 
+            src="/jillianrodak/jillian-hero.jpg" 
             alt="Jillian Rodak" 
             className="w-full h-auto rounded-lg shadow-2xl object-cover aspect-[5/6]"
           />

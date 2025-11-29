@@ -8,8 +8,11 @@ export default defineConfig(({ mode }) => {
     // UPDATED: Set to '/' so assets load correctly on the custom root domain (jillianrodak.com)
     base: '/', 
     server: {
-      port: 3000,
+      port: 5000,
       host: '0.0.0.0',
+      hmr: {
+        clientPort: 443,
+      },
     },
     plugins: [react()],
     define: {

@@ -1,4 +1,5 @@
 import React from 'react';
+import BlendedPhoto from './BlendedPhoto';
 
 const Story: React.FC = () => {
   return (
@@ -11,13 +12,14 @@ const Story: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
           <div className="relative">
-             <div className="absolute -top-4 -left-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
-             {/* UPDATED PATH BELOW */}
-             <img 
-               src="/jillian-about.png" 
-               alt="Jillian Graduation" 
-               className="w-full rounded-lg shadow-xl object-cover"
-             />
+            <BlendedPhoto
+              imageUrl="/jillian-about.png"
+              alt="Jillian Rodak"
+              blobVariant={2}
+              accentColor="#b8860b"
+              backgroundColor="#ffffff"
+              position="left"
+            />
           </div>
           <div className="text-gray-600 space-y-4 font-light leading-relaxed">
             <p>

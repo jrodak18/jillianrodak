@@ -1,4 +1,5 @@
 import React from 'react';
+import BlendedPhoto from './BlendedPhoto';
 
 const Hero: React.FC = () => {
   return (
@@ -20,12 +21,13 @@ const Hero: React.FC = () => {
 
         {/* Image */}
         <div className="order-1 md:order-2 relative max-w-md mx-auto md:max-w-full">
-          <div className="absolute -top-4 -right-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
-          {/* UPDATED PATH BELOW */}
-          <img 
-            src="/jillian-hero.jpg" 
-            alt="Jillian Rodak" 
-            className="w-full h-auto rounded-lg shadow-2xl object-cover aspect-[5/6]"
+          <BlendedPhoto
+            imageUrl="/jillian-hero.jpg"
+            alt="Jillian Rodak"
+            blobVariant={2}
+            accentColor="#b8860b"
+            backgroundColor="#faf8f5"
+            position="right"
           />
         </div>
       </div>

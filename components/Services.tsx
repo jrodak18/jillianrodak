@@ -1,28 +1,23 @@
 import React from 'react';
-import { User, FileText, Compass, MessageSquare, GraduationCap } from 'lucide-react';
+import { User, FileText, Compass, GraduationCap } from 'lucide-react';
 import GeminiCareerTip from './GeminiCareerTip';
 
 const Services: React.FC = () => {
   const services = [
     {
       icon: User,
-      title: 'Interview Preparation',
-      desc: 'Comprehensive preparation including case-based and presentation-based interviews. Get ready to showcase your best self.',
+      title: 'Preparing for interviews',
+      desc: 'Comprehensive preparation for cases, presentation, and behavioural-based interviews.',
     },
     {
       icon: FileText,
-      title: 'Resume & Cover Letter',
+      title: 'Designing impactful resumes and cover letters',
       desc: 'Professional development and editing of your resume and cover letter to make you stand out from the competition.',
     },
     {
       icon: Compass,
       title: 'Navigating Delicate Scenarios',
       desc: 'Expert guidance through team changes, pregnancy, work politics, job offer decisions, promotions, and leadership challenges.',
-    },
-    {
-      icon: MessageSquare,
-      title: 'Conversation Preparation',
-      desc: 'Preparing for difficult conversations or crafting professional emails about sensitive workplace scenarios.',
     },
   ];
 
@@ -40,7 +35,7 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col items-start">
-              <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-secondary-dark mb-6">
+              <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center mb-6" style={{ color: '#1E2A39' }}>
                 <service.icon size={24} />
               </div>
               <h4 className="text-xl text-gray-800 font-medium mb-3">{service.title}</h4>
@@ -48,13 +43,13 @@ const Services: React.FC = () => {
             </div>
           ))}
           
-          <div className="md:col-span-2 bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center max-w-2xl mx-auto w-full">
-            <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-secondary-dark mb-6">
+          <div className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col items-start">
+            <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center mb-6" style={{ color: '#1E2A39' }}>
               <GraduationCap size={24} />
             </div>
-            <h4 className="text-xl text-gray-800 font-medium mb-3">New Graduate Planning</h4>
+            <h4 className="text-xl text-gray-800 font-medium mb-3">Shaping your post-graduation plan</h4>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Crafting comprehensive career plans for new university graduates entering the workforce.
+              Crafting actionable plans for new university grads entering the workforce.
             </p>
           </div>
         </div>

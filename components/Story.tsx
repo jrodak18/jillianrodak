@@ -46,7 +46,7 @@ const Story: React.FC = () => {
              Twelve months later, I ended up with three job offers. I began working at a boutique corporate sustainability consulting firm, advising some of Canada's biggest consumer brands.
           </p>
           <p>
-            Those twelve months didn't just lead me to my first job. They gave me the foundation to navigate the following 16 years of my career. I have since worked in the non-profit, government, and corporate sectors, building my way up to my current role as Vice President, Sustainability at Restaurants Canada.
+            Those twelve months didn't just lead me to my first job. They gave me the foundation to navigate the following 16 years of my career. I have since worked in the non-profit, government, and corporate sectors, building my way up to my current role as Vice President, Sustainability at <a href="https://www.linkedin.com/in/jillianrodak/" target="_blank" rel="noopener noreferrer" className="text-secondary-dark hover:text-primary-dark underline transition-colors">Restaurants Canada</a>.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Story: React.FC = () => {
           <p className="text-xl font-serif italic mb-8">
             Throughout my career, I have always been passionate about helping others along their own career paths. I would love to help you navigate your journey.
           </p>
-          <a href="#contact" className="inline-block bg-secondary hover:bg-secondary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
+          <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
             LET'S CONNECT
           </a>
         </div>

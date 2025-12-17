@@ -1,0 +1,8 @@
+Section,Location / Context,Specific Change Instruction
+My Unique Approach,"Text Block (""No commitment..."")","In the paragraph under ""My Unique Approach"", update the text following ""no hypotheticals"" to match the change made in the cards: ""...no hypotheticals - we go deep into your unique reality and get to action""."
+AI / Micro-strategy,"""Need a quick boost?"" Section",Remove this entire section (the dark banner with AI-powered micro-strategy buttons).
+Contact,"Header Text (""I Would Love to Work With You"")","In the sentence ""help you achieve your goals,"" change the phrase ""achieve your goals"" to ""get there""."
+Contact,Connect With Me / Social Icons,Remove the Instagram icon from the social links section. The client specifically noted avoiding Instagram due to toxicity.
+Contact,Side Social Widget,Remove the Instagram icon from the sticky side widget as well.
+Contact,Booking Form / Calendly Embed,Replace the src attribute in the Calendly iframe or the link href with: https://calendly.com/jillian-rodak. Ensure the iframe height is sufficient to avoid scrollbars.
+Hero Section,Main banner image (Woman on couch),"Adjust the layout so the image fades into the text background or acts as a background image, removing the ""template-like"" feel of the image sitting inside a hard box."

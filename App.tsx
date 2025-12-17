@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <h3 className="text-3xl md:text-4xl text-white font-serif mb-6">Ready to Take Control of Your Career?</h3>
           <p className="text-gray-400 mb-8 text-lg font-light">Let's work together to navigate your next pivotal career moment.</p>
-          <a href="#contact" className="inline-block bg-secondary hover:bg-secondary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
+          <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
             GET IN TOUCH
           </a>
         </div>

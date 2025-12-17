@@ -3,7 +3,7 @@ import React from 'react';
 interface BlendedPhotoProps {
   imageUrl: string;
   alt: string;
-  blobVariant?: 1 | 2 | 3 | 4;
+  blobVariant?: 1 | 2 | 3 | 4 | 5;
   accentColor?: string;
   backgroundColor?: string;
   position?: 'left' | 'right';
@@ -22,6 +22,7 @@ const BlendedPhoto: React.FC<BlendedPhotoProps> = ({
     2: 'ellipse(45% 50% at 50% 50%)',
     3: 'polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 80%, 0% 20%)',
     4: 'polygon(0% 0%, 75% 0%, 100% 20%, 100% 80%, 75% 100%, 0% 100%)',
+    5: 'inset(0)',
   };
 
   const accentPositions = {

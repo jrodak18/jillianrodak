@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
             Own Your<br />Career Journey.
           </h2>
           <p className="text-lg text-gray-500 mb-8 max-w-lg mx-auto md:mx-0 font-light">
-            Navigate those pivotal professional moments with confidence
+            Navigate pivotal professional moments with confidence
           </p>
           <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 text-[11px] tracking-[2px] font-medium transition-all duration-300 shadow-md hover:shadow-lg">
             BOOK YOUR FREE CONSULTATION
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           <BlendedPhoto
             imageUrl="/jillian-hero.jpg"
             alt="Jillian Rodak"
-            blobVariant={2}
+            blobVariant={5}
             accentColor="#b8860b"
             backgroundColor="#faf8f5"
             position="right"

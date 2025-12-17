@@ -1,0 +1,12 @@
+Section,Location / Context,Specific Change Instruction
+Top Bar / Header,Top announcement bar above the logo,"Change the text ""EMPOWERING YOUR CAREER JOURNEY"" to ""OWN YOUR CAREER JOURNEY""."
+Hero Section,Top announcement bar above the logo,"Change the background color of the top announcement bar section to match the rust/brown color of the ""Book Your Free Consultation"" button."
+Navigation,"Main Menu (Home, My Story, Services, Contact)","Update the navbar flex properties: Move all nav links (Home, My Story, Services, Contact) to the right side of the container (justify-content: flex-end) and ensure the Logo remains on the far left."
+Hero Section,"Sub-headline text (""Be so much more..."")","Replace the text ""Be so much more. Do so much more. Achieve so much more."" with: ""Navigate those pivotal professional moments with confidence"""
+About Section,"""Hi, I'm Jillian"" - First Paragraph","Locate the first paragraph under 'Hi, I'm Jillian'. Delete the substring 'My name is Jillian Rodak, and'. Capitalize the 'I' in 'I have 16 years...' to start the sentence."
+About Section,"""Hi, I'm Jillian"" - Mission Paragraph","Keep the first sentence (""My mission is to empower you...""). Replace the rest of the paragraph with this text: ""Whether you are a new grad, gunning for that promotion, finding your leaders challenging, or unsure how to shape your professional growth around family planning, I've been there - and I'm here to help."""
+Features / Cards,"""Real Experience"" Card (Title)","Change the title ""Real Experience"" to ""Proven industry experience""."
+Features / Cards,"""Proven industry experience"" Card (Body text)","In the sentence ""16 years of real industry experience across..."", change the word ""across"" to ""navigating""."
+Features / Cards,"""No Commitment"" Card (Title)","Change the title ""No Commitment"" to ""Flexible, on-demand support""."
+Services,"""How I Can Help You"" (Intro Text)","In the sentence starting ""My coaching services are built upon..."", change the word ""strategies"" to ""steps""."
+Services,"""How I Can Help You"" (Intro Text)","In that same sentence, remove the phrase ""that transform potential into tangible results"" so the sentence ends after ""steps""."

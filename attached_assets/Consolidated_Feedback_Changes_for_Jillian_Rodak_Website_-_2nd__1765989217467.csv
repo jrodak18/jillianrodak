@@ -1,0 +1,13 @@
+Section,Location / Context,Specific Change Instruction
+Features / Cards,Card #3 (Title),"Change the title from ""Real World Guidance"" to ""Practical, Real-World Guidance"". This involves adding the word ""Practical,"" and adding a dash between ""Real"" and ""World""."
+Features / Cards,Card #3 (Body Text),"Replace the text starting with ""No hypotheticals..."" with: ""No hypotheticals - we go deep into your unique reality and get to action""."
+My Story,Biography Text (End of text),"Add a hyperlink to Jillian's LinkedIn profile at the end of the text, specifically on or near the text mentioning her current role at Restaurants Canada."
+Call to Action,"""Ready to Take Control..."" Section","Change the color of the ""GET IN TOUCH"" button to match the primary button color used elsewhere on the site (ensure consistency)."
+Footer / CTA,Bottom Dark Section,"Change the color of the ""LET'S CONNECT"" button to match the primary button color used elsewhere (ensure consistency)."
+Services / Cards,"""Resume & Cover Letter"" Card (Title)","Change the title to ""Designing impactful resumes and cover letters""."
+Services / Cards,"""Interview Preparation"" Card (Title)","Change the title to ""Preparing for interviews""."
+Services / Cards,"""Interview Preparation"" Card (Body Text)","Change the description to: ""Comprehensive preparation for cases, presentation, and behavioural-based interviews."" (Remove the second sentence ""Get ready to showcase..."")."
+Services / Cards,"""New Graduate Planning"" Card (Title)","Change the title to ""Shaping your post-graduation plan""."
+Services / Cards,"""New Graduate Planning"" Card (Body Text)","Change the description to ""Crafting actionable plans for new university grads entering the workforce""."
+Services / Cards,Card Layout / Grid,"Remove the ""Conversation Preparation"" card entirely. Move the ""New Graduate Planning"" card up to fill the gap or reflow the grid accordingly."
+Services / Cards,Icon Styling (All Cards),Change the SVG fill or icon font color to #1E2A39 (or strictly match the dark navy background color used in the 'Footer' or 'Need a quick boost' section)

@@ -19,7 +19,7 @@ const BlendedPhoto: React.FC<BlendedPhotoProps> = ({
 }) => {
   const clipPaths = {
     1: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-    2: 'ellipse(48% 50% at 50% 50%)',
+    2: 'ellipse(45% 50% at 50% 50%)',
     3: 'polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 80%, 0% 20%)',
     4: 'polygon(0% 0%, 75% 0%, 100% 20%, 100% 80%, 75% 100%, 0% 100%)',
   };
@@ -63,10 +63,10 @@ const BlendedPhoto: React.FC<BlendedPhotoProps> = ({
         <img
           src={imageUrl}
           alt={alt}
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover object-top"
           style={{
             clipPath: clipPaths[blobVariant],
-            aspectRatio: '4/5',
+            aspectRatio: '3/4',
           }}
         />
 

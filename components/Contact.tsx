@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 import CalendlyEmbed from './CalendlyEmbed';
 
 const Contact: React.FC = () => {
@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
           <p className="text-secondary-dark tracking-[3px] text-xs font-medium mb-4">CONTACT</p>
           <h2 className="text-4xl md:text-5xl text-gray-800 font-serif mb-6">I Would Love to Work With You</h2>
           <p className="text-gray-500">
-            Ready to take the next step in your career journey? Let's connect and discuss how I can help you achieve your goals.
+            Ready to take the next step in your career journey? Let's connect and discuss how I can help you get there.
           </p>
         </div>
 
@@ -54,9 +54,6 @@ const Contact: React.FC = () => {
                 <a href="https://www.linkedin.com/in/jillianrodak/" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
                   <Linkedin size={18} />
                 </a>
-                <a href="https://www.instagram.com/jillrodak" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
-                  <Instagram size={18} />
-                </a>
                 <a href="#" className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-secondary-dark hover:bg-secondary hover:text-white transition-colors">
                   <Mail size={18} />
                 </a>
@@ -74,7 +71,7 @@ const Contact: React.FC = () => {
               
               {/* Calendly Embed - Replace the URL below with your actual Calendly link */}
               <div className="flex-1 rounded-lg overflow-hidden">
-                 <CalendlyEmbed url="https://calendly.com/your-username/30min" />
+                 <CalendlyEmbed url="https://calendly.com/jillian-rodak" />
               </div>
             </div>
           </div>

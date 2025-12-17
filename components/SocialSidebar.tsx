@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const SocialSidebar: React.FC = () => {
   return (
@@ -9,9 +9,6 @@ const SocialSidebar: React.FC = () => {
       </span>
       <a href="https://www.linkedin.com/in/jillianrodak/" className="text-gray-500 hover:text-primary transition-colors duration-300">
         <Linkedin size={18} />
-      </a>
-      <a href="https://www.instagram.com/jillrodak" className="text-gray-500 hover:text-primary transition-colors duration-300">
-        <Instagram size={18} />
       </a>
     </div>
   );

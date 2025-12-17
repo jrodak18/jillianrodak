@@ -1,6 +1,5 @@
 import React from 'react';
 import { User, FileText, Compass, GraduationCap } from 'lucide-react';
-import GeminiCareerTip from './GeminiCareerTip';
 
 const Services: React.FC = () => {
   const services = [
@@ -54,12 +53,10 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        <GeminiCareerTip />
-
         <div className="bg-neutral-100 rounded-lg p-12 text-center mt-16">
           <h3 className="text-2xl text-gray-800 font-serif mb-4">My Unique Approach</h3>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            No commitment. No packages. We work together only when you need it. Real world guidance, no hypotheticals - we go deep into the specifics of your reality.
+            No commitment. No packages. We work together only when you need it. Real world guidance, no hypotheticals - we go deep into your unique reality and get to action.
           </p>
           <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
             BOOK A SESSION

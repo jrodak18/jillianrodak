@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
             Own Your<br />Career Journey.
           </h2>
           <p className="text-lg text-gray-500 mb-8 max-w-lg mx-auto md:mx-0 font-light">
-            Be so much more. Do so much more.<br />Achieve so much more.
+            Navigate those pivotal professional moments with confidence
           </p>
           <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 text-[11px] tracking-[2px] font-medium transition-all duration-300 shadow-md hover:shadow-lg">
             BOOK YOUR FREE CONSULTATION

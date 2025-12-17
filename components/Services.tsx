@@ -33,7 +33,7 @@ const Services: React.FC = () => {
           <p className="text-secondary-dark tracking-[3px] text-xs font-medium mb-4">SERVICES</p>
           <h2 className="text-4xl md:text-5xl text-gray-800 font-serif mb-6">How I Can Help You</h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            My coaching services are built upon real-world experience and practical strategies that transform potential into tangible results.
+            My coaching services are built upon real-world experience and practical steps.
           </p>
         </div>
 

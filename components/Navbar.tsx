@@ -23,32 +23,19 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-sm' : 'bg-white/90'}`}>
-      <div className="w-full bg-neutral-50 text-center py-2 text-[10px] sm:text-[11px] tracking-[2px] text-gray-500 font-medium">
-        EMPOWERING YOUR CAREER JOURNEY
+      <div className="w-full bg-primary text-center py-2 text-[10px] sm:text-[11px] tracking-[2px] text-white font-medium">
+        OWN YOUR CAREER JOURNEY
       </div>
       
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Desktop Left Links */}
-        <div className="hidden md:flex gap-8">
-          {navLinks.slice(0, 2).map((link) => (
-            <a 
-              key={link.label}
-              href={link.href} 
-              className="text-[13px] tracking-[1px] text-gray-700 hover:text-primary transition-colors font-medium"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-
-        {/* Logo */}
+        {/* Logo - Left */}
         <h1 className="text-xl md:text-2xl lg:text-[28px] tracking-[4px] text-gray-800 font-serif font-light cursor-pointer">
           JILLIAN RODAK
         </h1>
 
-        {/* Desktop Right Links */}
+        {/* Desktop Nav Links - Right */}
         <div className="hidden md:flex gap-8">
-          {navLinks.slice(2, 4).map((link) => (
+          {navLinks.map((link) => (
             <a 
               key={link.label}
               href={link.href} 

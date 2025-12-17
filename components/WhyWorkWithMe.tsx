@@ -2,8 +2,8 @@ import React from 'react';
 
 const WhyWorkWithMe: React.FC = () => {
   const pillars = [
-    { number: '1', title: 'No Commitment', text: 'No packages. We work together only when you need it. Flexible support on your terms.' },
-    { number: '2', title: 'Real Experience', text: '16 years of real industry experience across the corporate, government, and non-profit sectors.' },
+    { number: '1', title: 'Flexible, on-demand support', text: 'No packages. We work together only when you need it. Flexible support on your terms.' },
+    { number: '2', title: 'Proven industry experience', text: '16 years of real industry experience navigating the corporate, government, and non-profit sectors.' },
     { number: '3', title: 'Real World Guidance', text: 'No hypotheticals - we go deep into the specifics of your reality and your unique situation.' },
   ];
 

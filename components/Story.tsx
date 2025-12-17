@@ -14,7 +14,7 @@ const Story: React.FC = () => {
              <div className="absolute -top-4 -left-4 w-full h-full bg-neutral-100 rounded-lg -z-10"></div>
              {/* UPDATED PATH BELOW */}
              <img 
-               src="/jillian-about.jpg" 
+               src="/jillian-about.png" 
                alt="Jillian Graduation" 
                className="w-full rounded-lg shadow-xl object-cover"
              />

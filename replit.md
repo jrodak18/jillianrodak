@@ -8,6 +8,16 @@ A professional career coaching website built with React, TypeScript, and Vite. T
 **Current State**: Fully functional and deployed on Replit
 
 ## Recent Changes
+- **December 18, 2025**: Scroll animations and styling updates
+  - Added cascade scroll animations to "Why Work With Me" and "Services" sections
+  - Created useScrollAnimation hook with Intersection Observer (staggered on desktop, instant on mobile)
+  - Implemented BlendedPhoto component for organic photo styling with clip-paths and gradient fades
+  - Updated hero image to rectangular frame with gradient fade effect
+  - Updated My Story image to elliptical frame with gradient fade
+  - Removed AI micro-strategy section (GeminiCareerTip)
+  - Removed Instagram icons from contact and sidebar
+  - Updated Calendly link and various text content per client feedback
+  
 - **November 29, 2025**: Initial import from GitHub to Replit
   - Configured Vite to use port 5000 for Replit webview
   - Added HMR configuration for Replit proxy compatibility
@@ -25,16 +35,18 @@ A professional career coaching website built with React, TypeScript, and Vite. T
 /
 ├── components/          # React components
 │   ├── AboutPreview.tsx
+│   ├── BlendedPhoto.tsx  # Organic photo styling with clip-paths
 │   ├── CalendlyEmbed.tsx
 │   ├── Contact.tsx
 │   ├── Footer.tsx
-│   ├── GeminiCareerTip.tsx
 │   ├── Hero.tsx
 │   ├── Navbar.tsx
 │   ├── Services.tsx
 │   ├── SocialSidebar.tsx
 │   ├── Story.tsx
 │   └── WhyWorkWithMe.tsx
+├── hooks/              # Custom React hooks
+│   └── useScrollAnimation.ts  # Cascade scroll animations
 ├── services/           # Frontend service layer
 │   └── geminiService.ts
 ├── public/             # Static assets

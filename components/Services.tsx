@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, FileText, Compass, GraduationCap } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Services: React.FC = () => {
   const services = [
@@ -18,7 +19,17 @@ const Services: React.FC = () => {
       title: 'Navigating Delicate Scenarios',
       desc: 'Expert guidance through team changes, pregnancy, work politics, job offer decisions, promotions, and leadership challenges.',
     },
+    {
+      icon: GraduationCap,
+      title: 'Shaping your post-graduation plan',
+      desc: 'Crafting actionable plans for new university grads entering the workforce.',
+    },
   ];
+
+  const { containerRef, getCardStyle } = useScrollAnimation(services.length, {
+    threshold: 0.15,
+    staggerDelay: 150,
+  });
 
   return (
     <section id="services" className="py-24 bg-neutral-50/50">
@@ -31,9 +42,14 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col items-start">
+            <div
+              key={index}
+              data-animate-card
+              style={getCardStyle(index)}
+              className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl flex flex-col items-start"
+            >
               <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center mb-6" style={{ color: '#1E2A39' }}>
                 <service.icon size={24} />
               </div>
@@ -41,16 +57,6 @@ const Services: React.FC = () => {
               <p className="text-gray-500 text-sm leading-relaxed">{service.desc}</p>
             </div>
           ))}
-          
-          <div className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col items-start">
-            <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center mb-6" style={{ color: '#1E2A39' }}>
-              <GraduationCap size={24} />
-            </div>
-            <h4 className="text-xl text-gray-800 font-medium mb-3">Shaping your post-graduation plan</h4>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              Crafting actionable plans for new university grads entering the workforce.
-            </p>
-          </div>
         </div>
 
         <div className="bg-neutral-100 rounded-lg p-12 text-center mt-16">

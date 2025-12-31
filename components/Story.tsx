@@ -9,24 +9,26 @@ const Story: React.FC = () => {
           <h2 className="text-4xl md:text-5xl text-gray-800 font-serif">The Journey That Shaped My Approach</h2>
         </div>
 
-        <div className="flex justify-center mb-12">
-          <img
-            src="/jillian-about.png"
-            alt="Jillian Rodak"
-            className="w-full max-w-md h-auto rounded-lg shadow-lg"
-          />
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start mb-12">
+          <div className="relative">
+            <img
+              src="/jillian-about.png"
+              alt="Jillian Rodak"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
 
-        <div className="text-gray-600 font-light leading-relaxed space-y-6 mb-8">
-          <p>
-            It started 16 years ago, when I graduated with an HBA from Ivey Business School. I was driven, passionate and entered the "real world" with rose-coloured glasses. I wanted to help make the world a better place, and I wanted to use business skills and tools I learned at Ivey to do it. But there were two problems. First, the economy was still recovering from the "great recession", so jobs were hard to come by; and second, corporate sustainability was just beginning to evolve, and there were no opportunities for new grads to get into this type of work. After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin.
-          </p>
-        </div>
+          <div className="text-gray-600 font-light leading-relaxed">
+            <p className="mb-6">
+              It started 16 years ago, when I graduated with an HBA from Ivey Business School. I was driven, passionate and entered the "real world" with rose-coloured glasses. I wanted to help make the world a better place, and I wanted to use business skills and tools I learned at Ivey to do it. But there were two problems. First, the economy was still recovering from the "great recession", so jobs were hard to come by; and second, corporate sustainability was just beginning to evolve, and there were no opportunities for new grads to get into this type of work. After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin.
+            </p>
 
-        <div className="bg-neutral-50 p-6 md:p-8 rounded-lg mb-8 border-l-4 border-secondary">
-          <p className="text-lg md:text-xl text-gray-800 font-serif italic text-center">
-            "After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin."
-          </p>
+            <div className="bg-neutral-50 p-6 md:p-8 rounded-lg border-l-4 border-secondary">
+              <p className="text-lg md:text-xl text-gray-800 font-serif italic text-center">
+                "After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin."
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="text-gray-600 font-light leading-relaxed space-y-6 mb-12">

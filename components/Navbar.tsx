@@ -29,9 +29,13 @@ const Navbar: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo - Left */}
-        <h1 className="text-xl md:text-2xl lg:text-[28px] tracking-[4px] text-gray-800 font-serif font-light cursor-pointer">
-          JILLIAN RODAK
-        </h1>
+        <a href="#home" className="cursor-pointer">
+          <img 
+            src="/logo.png" 
+            alt="Jillian Rodak Career Studio" 
+            className="h-10 md:h-12 w-auto"
+          />
+        </a>
 
         {/* Desktop Nav Links - Right */}
         <div className="hidden md:flex gap-8">

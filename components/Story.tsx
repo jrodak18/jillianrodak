@@ -9,7 +9,7 @@ const Story: React.FC = () => {
           <h2 className="text-4xl md:text-5xl text-gray-800 font-serif">The Journey That Shaped My Approach</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
           <div className="relative">
             <img
               src="/jillian-about.png"
@@ -17,40 +17,30 @@ const Story: React.FC = () => {
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
-          <div className="text-gray-600 space-y-4 font-light leading-relaxed">
-            <p>
-              It started 16 years ago, when I graduated with an HBA from Ivey Business School. I was driven, passionate and entered the "real world" with rose-coloured glasses. I wanted to help make the world a better place, and I wanted to use business skills and tools I learned at Ivey to do it.
+          <div className="text-gray-600 font-light leading-relaxed">
+            <p className="mb-6">
+              It started 16 years ago, when I graduated with an HBA from Ivey Business School. I was driven, passionate and entered the "real world" with rose-coloured glasses. I wanted to help make the world a better place, and I wanted to use business skills and tools I learned at Ivey to do it. But there were two problems. First, the economy was still recovering from the "great recession", so jobs were hard to come by; and second, corporate sustainability was just beginning to evolve, and there were no opportunities for new grads to get into this type of work. After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin.
             </p>
+
+            <div className="bg-neutral-50 p-6 md:p-8 rounded-lg my-8 border-l-4 border-secondary">
+              <p className="text-lg md:text-xl text-gray-800 font-serif italic text-center">
+                "After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin."
+              </p>
+            </div>
+
+            <p className="mb-6">
+              That first year after graduation turned into the most difficult and rewarding year of my life. I quickly learned that submitting a resume and making some phone calls wasn't going to cut it. I learned how to hustle, hard. I created an internship for myself at a social purpose organization. I went to every industry event possible - pushing myself to say hello to strangers. I had about 50 coffee meetings. I started a blog and spent hours writing about topics I was passionate about. I developed a business strategy for a seasoned entrepreneur who trusted me with his passion and ideas. Twelve months later, I ended up with three job offers. I began working at a boutique corporate sustainability consulting firm, advising some of Canada's biggest consumer brands.
+            </p>
+
             <p>
-              But there were two problems. First, the economy was still recovering from the "great recession", so jobs were hard to come by; and second, corporate sustainability was just beginning to evolve, and there were no opportunities for new grads to get into this type of work.
+              Those twelve months didn't just lead me to my first job. They gave me the foundation to navigate the following 16 years of my career. I have since worked in the non-profit, government, and corporate sectors, building my way up to my current role as Vice President, Sustainability at Restaurants Canada. My career has been full of successes, setbacks, unexpected twists and turns that have pushed me to maneuver through corporate politics and confront uncomfortable scenarios at work. Through each of my three pregnancies I navigated difficult conversations, pending promotions, and job changes - experiences that have only strengthened my conviction that we create our own opportunities. I've been blessed to work with people who have encouraged me to go for what I wanted, even when it felt uneasy or "too aggressive". I have been mentored by brilliant, kind leaders and have mentored many colleagues.
             </p>
           </div>
         </div>
 
-        <div className="bg-neutral-50 p-8 md:p-12 rounded-lg mb-12 border-l-4 border-secondary">
-          <p className="text-xl md:text-2xl text-gray-800 font-serif italic text-center">
-            "After graduating on such a high, it felt like everything I had worked for came crashing down, and I didn't know where to begin."
-          </p>
-        </div>
-
-        <div className="space-y-6 text-gray-600 leading-relaxed font-light mb-16">
-          <p>
-            That first year after graduation turned into the most difficult and rewarding year of my life. I quickly learned that submitting a resume and making some phone calls wasn't going to cut it. I learned how to hustle, hard.
-          </p>
-          <p>
-            I created an internship for myself at a social purpose organization. I went to every industry event possible - pushing myself to say hello to strangers. I had about 50 coffee meetings. I started a blog and spent hours writing about topics I was passionate about.
-          </p>
-          <p>
-             Twelve months later, I ended up with three job offers. I began working at a boutique corporate sustainability consulting firm, advising some of Canada's biggest consumer brands.
-          </p>
-          <p>
-            Those twelve months didn't just lead me to my first job. They gave me the foundation to navigate the following 16 years of my career. I have since worked in the non-profit, government, and corporate sectors, building my way up to my current role as Vice President, Sustainability at <a href="https://www.linkedin.com/in/jillianrodak/" target="_blank" rel="noopener noreferrer" className="text-secondary-dark hover:text-primary-dark underline transition-colors">Restaurants Canada</a>.
-          </p>
-        </div>
-
         <div className="bg-neutral-800 text-white p-10 rounded-lg text-center">
           <p className="text-xl font-serif italic mb-8">
-            Throughout my career, I have always been passionate about helping others along their own career paths. I would love to help you navigate your journey.
+            Throughout my career, I have always been passionate about helping others along their own career paths - whether it's interview preparation, figuring out what's next, or navigating through challenging issues at work. I would love to help you navigate your journey.
           </p>
           <a href="#contact" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 text-[11px] tracking-[2px] font-medium transition-all duration-300">
             LET'S CONNECT

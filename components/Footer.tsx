@@ -6,8 +6,11 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           <div className="text-center md:text-left">
-            <h3 className="text-lg tracking-[3px] font-serif">JILLIAN RODAK</h3>
-            <p className="text-gray-500 text-sm mt-2">Career Studio</p>
+            <img 
+              src="/logo-white.png" 
+              alt="Jillian Rodak Career Studio" 
+              className="h-12 w-auto"
+            />
           </div>
           <div className="flex gap-8 text-sm text-gray-400">
             <a href="#home" className="hover:text-white transition-colors">Home</a>

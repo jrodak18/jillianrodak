@@ -1,50 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 import CalendlyEmbed from './CalendlyEmbed';
 
 const Contact: React.FC = () => {
-  const formRef = useRef<HTMLFormElement>(null);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formRef.current) return;
-    
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    const formData = new FormData(formRef.current);
-    const data = {
-      user_name: formData.get('user_name') as string,
-      user_email: formData.get('user_email') as string,
-      message: formData.get('message') as string,
-    };
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        formRef.current?.reset();
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Contact form error:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -60,32 +18,42 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="bg-neutral-50 p-8 rounded-lg h-full">
             <h3 className="text-xl text-gray-800 font-medium mb-6">Get In Touch</h3>
-            <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
+            <form 
+              action="https://formsubmit.co/careerstudio@jillianrodak.com" 
+              method="POST"
+              className="space-y-6"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Inquiry from Career Studio Website" />
+              
               <div>
-                <label className="block text-sm text-gray-500 mb-2">Name</label>
+                <label htmlFor="name" className="block text-sm text-gray-500 mb-2">Name</label>
                 <input 
                   type="text"
-                  name="user_name"
+                  name="name"
+                  id="name"
                   required
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-secondary transition-colors bg-white"
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-500 mb-2">Email</label>
+                <label htmlFor="email" className="block text-sm text-gray-500 mb-2">Email</label>
                 <input 
                   type="email"
-                  name="user_email"
+                  name="email"
+                  id="email"
                   required
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-secondary transition-colors bg-white"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-500 mb-2">Message</label>
+                <label htmlFor="message" className="block text-sm text-gray-500 mb-2">Message</label>
                 <textarea 
                   rows={4}
                   name="message"
+                  id="message"
                   required
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-secondary transition-colors bg-white resize-none"
                   placeholder="Tell me about your career goals..."
@@ -93,23 +61,10 @@ const Contact: React.FC = () => {
               </div>
               <button 
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-primary-dark text-white py-4 text-[11px] tracking-[2px] font-medium transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-primary hover:bg-primary-dark text-white py-4 text-[11px] tracking-[2px] font-medium transition-all duration-300"
               >
-                {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
+                SEND MESSAGE
               </button>
-              
-              {submitStatus === 'success' && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700 text-center">
-                  Thank you! Your message has been sent successfully. I'll get back to you soon.
-                </div>
-              )}
-              
-              {submitStatus === 'error' && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-center">
-                  Sorry, there was an error sending your message. Please try again or email directly.
-                </div>
-              )}
             </form>
 
             <div className="mt-8 pt-8 border-t border-gray-200">

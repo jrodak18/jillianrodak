@@ -1,0 +1,66 @@
+Request: Fix "My Story" Layout and Update Content
+The Goal: Eliminate the large vertical whitespace gaps in the "My Story" section by aligning elements to the top and inserting the Quote Box inline between paragraphs. Simultaneously, update the text content to the "Master Copy" version, as the current text is missing several sentences.
+
+Layout Instructions:
+
+Top Alignment: Change the alignment of the two-column container (Image Left, Text Right) to align-items: flex-start (or remove any margin-top / padding-top on the right column). The text should start at the exact same vertical line as the top of the photo.
+
+Quote Placement: Move the "Quote Box" component so that it sits inside the right-hand column, positioned between the first paragraph (ending in "...where to begin.") and the second paragraph (starting with "That first year...").
+
+Spacing: Ensure there is standard padding (e.g., 2rem or 32px) above and below the Quote Box so it breathes, but doesn't create huge gaps.
+
+Content Update Instructions: Replace the entire text block in the right-hand column with the content below. This includes the missing sentences about the "entrepreneur" and the "career details" that were cut off in the previous version.
+
+The Exact Copy to Use:
+
+HTML
+
+<p>
+  It started 16 years ago, when I graduated with an HBA from Ivey Business School. 
+  I was driven, passionate and entered the "real world" with rose-coloured glasses. 
+  I wanted to help make the world a better place, and I wanted to use business skills 
+  and tools I learned at Ivey to do it. But there were two problems. First, the 
+  economy was still recovering from the "great recession", so jobs were hard to come 
+  by; and second, corporate sustainability was just beginning to evolve, and there 
+  were no opportunities for new grads to get into this type of work. After graduating 
+  on such a high, it felt like everything I had worked for came crashing down, and 
+  I didn't know where to begin.
+</p>
+
+<div class="quote-box">
+  "After graduating on such a high, it felt like everything I had worked for came 
+  crashing down, and I didn't know where to begin."
+</div>
+<p>
+  That first year after graduation turned into the most difficult and rewarding year 
+  of my life. I quickly learned that submitting a resume and making some phone calls 
+  wasn't going to cut it. I learned how to hustle, hard. I created an internship for 
+  myself at a social purpose organization. I went to every industry event possible - 
+  pushing myself to say hello to strangers. I had about 50 coffee meetings. I started 
+  a blog and spent hours writing about topics I was passionate about. I developed a 
+  business strategy for a seasoned entrepreneur who trusted me with his passion and 
+  ideas. Twelve months later, I ended up with three job offers. I began working at a 
+  boutique corporate sustainability consulting firm, advising some of Canada's biggest 
+  consumer brands.
+</p>
+
+<p>
+  Those twelve months didn't just lead me to my first job. They gave me the foundation 
+  to navigate the following 16 years of my career. I have since worked in the non-profit, 
+  government, and corporate sectors, building my way up to my current role as Vice 
+  President, Sustainability at Restaurants Canada. My career has been full of successes, 
+  setbacks, unexpected twists and turns that have pushed me to maneuver through 
+  corporate politics and confront uncomfortable scenarios at work. Through each of my 
+  three pregnancies I navigated difficult conversations, pending promotions, and job 
+  changes - experiences that have only strengthened my conviction that we create our 
+  own opportunities. I've been blessed to work with people who have encouraged me to 
+  go for what I wanted, even when it felt uneasy or "too aggressive". I have been 
+  mentored by brilliant, kind leaders and have mentored many colleagues.
+</p>
+
+<div class="cta-box">
+  Throughout my career, I have always been passionate about helping others along their 
+  own career paths - whether it's interview preparation, figuring out what's next, or 
+  navigating through challenging issues at work. I would love to help you navigate 
+  your journey.
+</div>

@@ -4,8 +4,8 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const WhyWorkWithMe: React.FC = () => {
   const pillars = [
     { number: '1', title: 'Flexible, on-demand support', text: 'No packages. We work together only when you need it. Flexible support on your terms.' },
-    { number: '2', title: 'Proven industry experience', text: '16 years of real industry experience navigating the corporate, government, and non-profit sectors.' },
-    { number: '3', title: 'Practical, Real-World Guidance', text: 'No hypotheticals - we go deep into your unique reality and get to action.' },
+    { number: '2', title: 'Proven industry experience', text: 'Real industry experience navigating the corporate, government, and non-profit sectors.' },
+    { number: '3', title: 'Practical, real-world guidance', text: 'No hypotheticals - we go deep into your unique reality and get to action.' },
   ];
 
   const { containerRef, getCardStyle } = useScrollAnimation(pillars.length, {

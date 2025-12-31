@@ -16,7 +16,7 @@ const Services: React.FC = () => {
     },
     {
       icon: Compass,
-      title: 'Navigating Delicate Scenarios',
+      title: 'Navigating delicate scenarios',
       desc: 'Expert guidance through team changes, pregnancy, work politics, job offer decisions, promotions, and leadership challenges.',
     },
     {
@@ -37,9 +37,6 @@ const Services: React.FC = () => {
         <div className="text-center mb-16">
           <p className="text-secondary-dark tracking-[3px] text-xs font-medium mb-4">SERVICES</p>
           <h2 className="text-4xl md:text-5xl text-gray-800 font-serif mb-6">How I Can Help You</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
-            My coaching services are built upon real-world experience and practical steps.
-          </p>
         </div>
 
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

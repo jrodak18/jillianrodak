@@ -1,0 +1,58 @@
+Request: Implement AJAX Form Submission with Success Message
+
+I would like to upgrade the Contact Form behavior. Instead of redirecting the user to a different page upon submission, please keep them on the current page, hide the form, and display a success message in its place.
+
+1. Update the HTML Please wrap the <form> in a container and add a hidden "Success Message" container right next to it.
+
+Form Container ID: form-container
+
+Success Message ID: success-message (set to display: none; initially).
+
+2. Use this HTML structure:
+
+HTML
+
+<div id="form-container">
+    <form id="contact-form" action="https://formsubmit.co/careerstudio@jillianrodak.com" method="POST">
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+</div>
+
+<div id="success-message" style="display: none; text-align: center; padding: 40px; background-color: #f9f9f9; border-radius: 8px;">
+    <h3 style="color: #2c3e50; margin-bottom: 16px;">Thank you for reaching out!</h3>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+        Your message has been successfully received. I’ll review your inquiry and get back to you shortly to discuss how we can navigate your career journey together.
+    </p>
+</div>
+3. Add the JavaScript Please add the following script script at the bottom of the page (or in the script file) to intercept the form submission. This script prevents the page reload, sends the data to FormSubmit via fetch, and toggles the visibility of the form/success message.
+
+JavaScript
+
+const form = document.getElementById('contact-form');
+const formContainer = document.getElementById('form-container');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop the default browser redirect
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/careerstudio@jillianrodak.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+    })
+    .then(response => response.json())
+    .then(data => {
+        // On success: Hide form, Show success message
+        formContainer.style.display = 'none';
+        successMessage.style.display = 'block';
+    })
+    .catch(error => {
+        console.log(error);
+        alert('Something went wrong. Please try again or email me directly.');
+    });
+});

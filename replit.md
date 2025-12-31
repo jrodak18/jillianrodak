@@ -8,6 +8,12 @@ A professional career coaching website built with React, TypeScript, and Vite. T
 **Current State**: Fully functional and deployed on Replit
 
 ## Recent Changes
+- **December 31, 2025**: Contact form and My Story layout updates
+  - Replaced contact form with FormSubmit.co (no backend credentials needed)
+  - Removed unused /api/contact endpoint and EmailJS code from server.js
+  - Updated My Story section: image centered at top, all text spans full width
+  - Quote box now spans full container width
+
 - **December 18, 2025**: Scroll animations and styling updates
   - Added cascade scroll animations to "Why Work With Me" and "Services" sections
   - Created useScrollAnimation hook with Intersection Observer (staggered on desktop, instant on mobile)

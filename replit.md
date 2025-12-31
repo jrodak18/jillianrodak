@@ -11,8 +11,7 @@ A professional career coaching website built with React, TypeScript, and Vite. T
 - **December 31, 2025**: Contact form and My Story layout updates
   - Replaced contact form with FormSubmit.co (no backend credentials needed)
   - Removed unused /api/contact endpoint and EmailJS code from server.js
-  - Updated My Story section: image centered at top, all text spans full width
-  - Quote box now spans full container width
+  - Updated My Story section layout: image on left with first paragraph + quote beside it, last two paragraphs span full width below
 
 - **December 18, 2025**: Scroll animations and styling updates
   - Added cascade scroll animations to "Why Work With Me" and "Services" sections

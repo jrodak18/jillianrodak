@@ -26,8 +26,8 @@ const App: React.FC = () => {
           </a>
         </div>
       </section>
-      <Story />
       <Services />
+      <Story />
       <Contact />
       <Footer />
     </main>

@@ -7,7 +7,7 @@ const SocialSidebar: React.FC = () => {
       <span className="text-[10px] tracking-[2px] text-gray-500 [writing-mode:vertical-rl] rotate-180 mb-2 font-medium">
         LET'S CONNECT
       </span>
-      <a href="https://www.linkedin.com/in/jillianrodak/" className="text-gray-500 hover:text-primary transition-colors duration-300">
+      <a href="https://www.linkedin.com/in/jillianrodak/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors duration-300">
         <Linkedin size={18} />
       </a>
     </div>

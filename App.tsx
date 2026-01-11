@@ -16,6 +16,7 @@ const App: React.FC = () => {
       <SocialSidebar />
       <Hero />
       <AboutPreview />
+      <Services />
       <WhyWorkWithMe />
       <section className="py-24 bg-neutral-800 text-center px-6">
         <div className="max-w-3xl mx-auto">
@@ -26,7 +27,6 @@ const App: React.FC = () => {
           </a>
         </div>
       </section>
-      <Services />
       <Story />
       <Contact />
       <Footer />

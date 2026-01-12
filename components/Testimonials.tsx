@@ -28,18 +28,26 @@ const Testimonials: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl gap-8 w-full">
+          <div className="flex md:grid md:grid-cols-3 max-w-7xl gap-8 w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 md:pb-0">
             {testimonials.map((t, index) => (
-              <div key={index} className="bg-neutral-50 p-8 md:p-12 rounded-lg border border-gray-100 flex flex-col h-full text-center">
-                <div className="flex-1">
-                  <p className="text-gray-600 italic mb-8 text-lg leading-relaxed">"{t.quote}"</p>
-                </div>
-                <div>
-                  <p className="text-gray-800 font-medium text-lg">— {t.author}</p>
+              <div key={index} className="min-w-full md:min-w-0 snap-center px-4 md:px-0">
+                <div className="bg-neutral-50 p-8 md:p-12 rounded-lg border border-gray-100 flex flex-col h-full text-center">
+                  <div className="flex-1">
+                    <p className="text-gray-600 italic mb-8 text-lg leading-relaxed">"{t.quote}"</p>
+                  </div>
+                  <div>
+                    <p className="text-gray-800 font-medium text-lg">— {t.author}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+        {/* Mobile Swipe Indicator */}
+        <div className="flex justify-center gap-2 mt-4 md:hidden">
+          {testimonials.map((_, i) => (
+            <div key={i} className="w-2 h-2 rounded-full bg-neutral-300" />
+          ))}
         </div>
       </div>
     </section>

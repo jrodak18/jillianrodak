@@ -11,6 +11,11 @@ const Testimonials: React.FC = () => {
       quote: "Jillian helped me navigate the hardest year of my professional life. After getting laid off and falling into a job that wasn’t the right fit, she coached me through some tough decisions that ultimately led to what ended up being the most rewarding phase of my career. Without her foresight and unique perspective, I might not have landed so steadily on my feet so soon.",
       author: "Shane",
       role: ""
+    },
+    {
+      quote: "Working with Jillian transformed my interview preparation. She helped me clearly articulate my experience using strong, concise stories, coached me on answering behavioral questions, and gave actionable feedback on my delivery and body language. I walked into the interview confident, prepared, and ultimately landed my dream job.",
+      author: "Nikki",
+      role: ""
     }
   ];
 
@@ -23,7 +28,7 @@ const Testimonials: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl gap-8 w-full">
             {testimonials.map((t, index) => (
               <div key={index} className="bg-neutral-50 p-8 md:p-12 rounded-lg border border-gray-100 flex flex-col h-full text-center">
                 <div className="flex-1">

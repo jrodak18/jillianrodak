@@ -6,6 +6,7 @@ import AboutPreview from './components/AboutPreview';
 import WhyWorkWithMe from './components/WhyWorkWithMe';
 import Story from './components/Story';
 import Services from './components/Services';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         </div>
       </section>
       <Story />
+      <Testimonials />
       <Contact />
       <Footer />
     </main>

@@ -9,7 +9,7 @@ const Testimonials: React.FC = () => {
     },
     {
       quote: "Jillian helped me navigate the hardest year of my professional life. After getting laid off and falling into a job that wasn’t the right fit, she coached me through some tough decisions that ultimately led to what ended up being the most rewarding phase of my career. Without her foresight and unique perspective, I might not have landed so steadily on my feet so soon.",
-      author: "Client",
+      author: "Shane",
       role: ""
     }
   ];

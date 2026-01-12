@@ -3,7 +3,7 @@ import React from 'react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: "Jillian helped me navigate through a time of high uncertainty in my career — a time with rapid market and industry changes, technology changing the future of work, and a time in my life where there was high cultural and societal pressure for me to succeed. Through several conversations, Jillian was able to help me make sense of how to navigate changes while still achieving my high personal ambitions. For that, I am very grateful and would recommend her to those who may be going through something similar.",
+      quote: "Jillian helped me navigate through a time of high uncertainty in my career — a time with rapid market and industry changes, technology changing the future of work, and a time in my life where there was high cultural and societal pressure for me to succeed. Jillian was able to help me make sense of how to navigate changes while still achieving my high personal ambitions.",
       author: "Misha",
       role: ""
     },

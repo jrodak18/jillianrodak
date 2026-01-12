@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-secondary-dark tracking-[3px] text-xs font-medium mb-4">TESTIMONIALS</p>
-          <h2 className="text-4xl md:text-5xl text-gray-800 font-serif mb-6">What My Clients Say</h2>
+          <h2 className="text-4xl md:text-5xl text-gray-800 font-serif mb-6">What My Clients Are Saying</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
